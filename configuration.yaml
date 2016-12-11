@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Tree House
   # Location required to calculate the time the sun rises and sets
-  latitude: 39.9383831
-  longitude: -75.1621562
+  latitude: !secret lat
+  longitude: !secret lon
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 12
   # metric for Metric, imperial for Imperial
