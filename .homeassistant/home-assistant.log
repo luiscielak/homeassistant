@@ -1,8 +1,0 @@
-16-12-10 18:35:12 homeassistant.util.yaml: Secret automatic_id not defined.
-16-12-10 18:35:12 homeassistant.util.yaml: Secret automatic_secret not defined.
-16-12-10 18:35:12 homeassistant.util.yaml: Secret automatic_username not defined.
-16-12-10 18:35:12 homeassistant.util.yaml: Secret automatic_password not defined.
-16-12-10 18:35:12 homeassistant.bootstrap: Invalid config for [device_tracker.automatic]: string value is None for dictionary value @ data['client_id']. Got None
-string value is None for dictionary value @ data['password']. Got None
-string value is None for dictionary value @ data['secret']. Got None
-string value is None for dictionary value @ data['username']. Got None. (See ?:?). Please check the docs at https://home-assistant.io/components/device_tracker.automatic/
