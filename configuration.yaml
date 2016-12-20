@@ -12,7 +12,7 @@ homeassistant:
   time_zone: America/New_York
 
 # Show links to resources in log and frontend
-introduction:
+# introduction:
 
 # Enables the frontend
 frontend:
@@ -39,9 +39,63 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
+# Sensors
 sensor:
-  platform: yr
+  - platform: yr
+    monitored_conditions:
+      - temperature
+      - symbol
+      - precipitation
+      - windSpeed
+      - pressure
+      - windDirection
+      - humidity
+      - fog
+      - cloudiness
+      - lowClouds
+      - mediumClouds
+      - highClouds
+      - dewpointTemperature  
+  # - platform: cpuspeed
+  - platform: speedtest
+    minute:
+      - 0
+      - 30  
+    monitored_conditions:
+      - ping
+      - download
+      - upload  
+  - platform: glances
+    host: 10.13.37.179
+    port: 8123
+    resources:
+      - 'disk_use_percent'
+      - 'disk_use'
+      - 'disk_free'
+      - 'memory_use_percent'
+      - 'memory_use'
+      - 'memory_free'
+      - 'swap_use_percent'
+      - 'swap_use'
+      - 'swap_free'
+      - 'processor_load'
+      - 'process_running'
+      - 'process_total'
+      - 'process_thread'
+      - 'process_sleeping'
+
+
+  # - platform: yweather
+  #   monitored_conditions:
+  #     - weather
+  #     - weather_current
+  #     - temp_min
+  #     - temp_max
+  #     - wind_speed
+  #     - pressure
+  #     - visibility
+  #     - humidity
+  #     - temperature
 
 
 
@@ -58,6 +112,21 @@ device_tracker:
     secret: !secret automatic_secret
     username: !secret automatic_username
     password: !secret automatic_password
+
+
+# Yahoo Weather
+# sensor:
+  # - platform: yweather
+  #   monitored_conditions:
+  #     - weather
+  #     - weather_current
+  #     - temp_min
+  #     - temp_max
+  #     - wind_speed
+  #     - pressure
+  #     - visibility
+  #     - humidity
+  #     - temperature
 
 
 # Uber

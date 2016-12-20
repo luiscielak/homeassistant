@@ -1,1 +1,108 @@
-16-12-11 05:17:49 homeassistant.components.light.hue: Connected to Hue at 10.13.37.181 but not registered.
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1909453920 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception closing connection <sqlite3.Connection object at 0x69b01a38>
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1909453920 and this is thread id 1996308480
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 300, in _close_connection
+    self._dialect.do_close(connection)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 438, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1909453920 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1957688416 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception closing connection <sqlite3.Connection object at 0x69b01ac0>
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1957688416 and this is thread id 1996308480
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 300, in _close_connection
+    self._dialect.do_close(connection)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 438, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1957688416 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1892676704 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception closing connection <sqlite3.Connection object at 0x69b01570>
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1892676704 and this is thread id 1996308480
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 300, in _close_connection
+    self._dialect.do_close(connection)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 438, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1892676704 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception during reset or similar
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1938814048 and this is thread id 1996308480
+16-12-11 08:19:18 sqlalchemy.pool.NullPool: Exception closing connection <sqlite3.Connection object at 0x69b019b0>
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 687, in _finalize_fairy
+    fairy._reset(pool)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 829, in _reset
+    pool._dialect.do_rollback(self)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 432, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1938814048 and this is thread id 1996308480
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/pool.py", line 300, in _close_connection
+    self._dialect.do_close(connection)
+  File "/home/homeassistant/.homeassistant/deps/sqlalchemy/engine/default.py", line 438, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 1938814048 and this is thread id 1996308480
